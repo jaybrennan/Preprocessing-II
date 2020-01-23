@@ -10,10 +10,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
-}
-
 h1 {
   font-size: 4rem;
 }
@@ -43,4 +39,191 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+//typography//
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.btn {
+
+  .buttonMain();
+
+
+  
+}
+
+//form css
+
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+
+
+html,body{
+background: url("../images/green-small.jpg");
+}
+
+svg{
+  fill: white;
+}
+
+.main h2, .main p {
+  color: white;
+}
+
+
+/*******************************************
+      Layout
+*******************************************/
+.wrapper{
+  background-color: #17a2b8 ;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+.masthead{
+text-align: center;
+  background-color: #0f6674;
+  border-radius: 10px 10px 0px 0px;
+}
+.main{
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 0 auto;
+
+   
+}
+.foot{
+  background-color: #CC745A;
+  clear: both;
+}
+.foot p{
+  text-align: center;
+}
+
+/*******************************************
+      Form Styles
+*******************************************/
+.formBox{
+  padding-bottom: 1rem;
+}
+.col{
+  padding-bottom: 1rem;
+}
+#slider-range{
+margin: 1rem 0rem;
+width:80%;
+}
+.buttons{
+padding-bottom: 1rem;
+}
+.buttons input{
+margin-top: 3rem;
+background-color: #ffffff;
+
+}
+
+label{
+display: block;
+font-size: 1.3rem;
+color: white;
+padding-bottom: 1rem;
+}
+
+
+input, select, textarea{
+padding: 0.4rem;
+width:80%;
+font-size: 2rem;
+border: 0.2rem solid #B26C58;
+}
+select{
+width:30%;
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+
+}
+
+
+
+
+
+
+/***************************************
+           Responsive layouts
+****************************************/
+@media screen and (min-width: 500px){
+  .main{
+      max-width: 780px;
+  }
+  .formBox{
+     width: 50%;
+     float: left;  
+  }
+  .col{
+    width: 50%;
+     float: left;  
+  }
+  .buttons input{
+   margin-top: 7rem;
+
+  }
+  
+}
+@media screen and (min-width: 780px){
+  .wrapper{
+      max-width: 1024px;
+      
+  }
+
+  .formBox{
+     width: 25%;
+     float: left;
+     margin-bottom: 3rem;
+  }
+  .col{
+    width: 25%;
+     float: left;
+  }
+  
+  .buttons{
+      clear: both;
+  }
+
+  .buttons input{
+   margin-top: 2rem;
+
+  }
+
 }

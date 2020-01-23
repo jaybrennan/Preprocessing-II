@@ -1,1 +1,18 @@
 // Mixins in here
+
+.space-up(@margint: 2rem, @marginb: 2rem, @padding-b: 1.5rem) {
+    margin-top: @margint;
+    margin-bottom: @marginb;
+    padding-bottom: @padding-b;
+}
+
+.buttonMain(@btnColor: #17a2b8, @btnPadding: 4%, @btnTextColor: white, @border-radius: 10px, @max-width-btn:85%, @btn-text-align: center ) {
+
+    background-color: @btnColor;
+    padding: @btnPadding;
+    color: @btnTextColor;
+    border-radius: @border-radius;
+    max-width: @max-width-btn;
+    text-align: @btn-text-align;
+
+}
