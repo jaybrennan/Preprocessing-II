@@ -1,4 +1,7 @@
+
 .home {
+
+  
 
   .content-section {
     margin: 30px 0;
@@ -17,6 +20,11 @@
       width: 48%;
       padding-left: 1%;
 
+      @media @max500 {
+        width: 100%;
+        padding-left: 0%;
+      }
+
       img {
         border-radius: 10px;
       }
@@ -27,35 +35,125 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @max500 {
+      flex-direction: column-reverse;
+    }
+
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @max500 {
+       width: 100%; 
+       padding-right: 0%;
+      }
+
     }
   }
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+
+    @media @max500 {
+      width: 100%;
+    }
+
+    img {
+      @media @max500 {
+        border-radius: 10px;
+      }
+    }
+
+    .text-content {
+      border-radius: 10px;
+
+    }
 
     img {
       border-radius: 10px;
     }
+
+
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @media @max500 {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 10%;
+      margin: 0 auto;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @max500 {
+        width: 100%;
+      }
+
     }
   }
 }// home
+
+.about {
+
+  h2 {
+    margin-top: @space-up;
+  }
+
+}
+
+.about {
+  .space-up();
+  border-bottom: @border-bottom;
+}
+
+.container.home {
+  @media @max500 {
+    padding: @mobile-padding;
+  }
+}
+
+
+.home .content-section .text-content {
+  @media @max500 {
+  display: block;
+  width: 100%;
+  }
+}
+
+.btn {
+    @media @max500 {
+      min-width: 100%;
+      font-size: 1.8rem;
+    }
+}
+
+.home .content-pick {
+  padding-top: 3rem;
+}
+
+.masthead h1 {
+  padding: 1rem;
+  color: white;
+}
+
+col buttons {
+  display: flex;
+}
